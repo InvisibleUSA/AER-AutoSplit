@@ -1,12 +1,17 @@
 state("AER") {
-    bool isLoading : 0xFF84D0, 0x124, 0x1F8, 0x78, 0xB8, 0x56C;
+    bool isLoading : 0x1036588, 0x4, 0x4C, 0x18, 0x0, 0xC, 0x14;
 }
 
 init {
 	refreshRate = 1000/2; // two times a second or every 500ms
-	if(game.Handle != null) {
-		if((int)game.Handle > 0) {
-			// all good
+	if(game != null) {
+		if(game.Handle != null) {
+			if((int)game.Handle > 0) {
+				// all good
+			}
+			else {
+				throw new Exception("AER not yet connected to LiveSplit");
+			}
 		}
 		else {
 			throw new Exception("AER not yet connected to LiveSplit");
