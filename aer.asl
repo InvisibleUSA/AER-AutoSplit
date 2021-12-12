@@ -134,7 +134,7 @@ init {
     refreshRate = 1000/500; // cycle every 0.5 seconds
     if(game.Handle == null) {
         throw new Exception("handle invalid");
-	}
+    }
     vars.dbgOut("init{} - attached autosplitter to game client");
 
 	// reset globals
