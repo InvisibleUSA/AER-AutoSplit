@@ -61,7 +61,7 @@ startup {
     */
     vars.dbgOut = (Action<string>) ((text) => {
         if (debugEnabled) {
-			print(" «[AER - v" + vars.ver + "]» " + text);
+            print(" «[AER - v" + vars.ver + "]» " + text);
         }
     });
     
