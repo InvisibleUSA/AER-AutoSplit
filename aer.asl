@@ -1,6 +1,6 @@
 /*
     AER: Memories Of Old
-    Version: 0.1.3
+    Version: 0.1.4
     Author: NoTeefy
     Compatible Versions:
         Standalone (PC) || W10 (functional)
@@ -18,7 +18,7 @@ startup {
     refreshRate = 1000/500; // cycle every 0.5 seconds
 
     // init version and debug flag
-    vars.ver = "0.1.3";
+    vars.ver = "0.1.4";
     var debugEnabled = false;
 
     // global variables
@@ -116,9 +116,6 @@ startup {
             })
         ).Start();
     });
-
-    // show new splitter information
-    vars.showInfo("Hi there.\n\n\nThe author of the autosplitter that you're currently using here o/\n\nI just wanted to inform you, that you're using a new version which should have broader support for all release platforms (Steam, GOG, Epic Store).\nI've also integrated additional loading flags used by the engine. One of those flags only gets created once you're on the loading screen (for the first time after starting the game). Once the splitter has loaded all flags, it will notify you through a short chime.\nYou don't need to load into a game when going for a run after starting AER as the other flags compensate for it during the first loading screen.\nPlease make sure to report any bugs that you may experience on our Discord. \nGL for your runs and may the speed be with you! :)\n\n\nKind regards, NoTeefy", "New Autosplitter version");
 }
 /*
     shutdown{} runs when the script gets unloaded (disabling autosplitter, closing LiveSplit, changing splits)
